@@ -42,6 +42,8 @@ public class SunburstConfiguration: ObservableObject {
 
     @Published public var selectedNode: Node?
     @Published public var focusedNode: Node?
+    
+    @Published public var animation: Animation? = Animation.default
 
     private var cancellable: AnyCancellable?
     private var isValidatingAndPreparing = false
